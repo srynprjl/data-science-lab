@@ -1,9 +1,7 @@
-a = input("Enter a paragraph: ").split(" ")
-
+a = input("Enter a paragraph: ").strip().split(" ")
 
 uw = set(a)
-w = list(uw)
-w = sorted(w)
+w = sorted(uw)
 count = len(w)
 
 print(f"Unique Words: {w}")

@@ -5,10 +5,10 @@ average
 '''
 
 
-a = input("Movie Name-Rating, Movie2-Rating: ").replace(" ", "").strip()
+a = input("Input the movies: ").replace(" ", "").strip()
 a = a.split(",")
 a = [item for item in a if "-" in item]
-a = [ tuple(item.split("-")) for item in a]
+a = [tuple(item.split("-")) for item in a]
 
 def average(movies: list):
     ratings = 0
@@ -26,7 +26,7 @@ def highest_rated(movies):
     for title, rating in movies:
         if float(highest[1]) < float(rating):
             highest = (title, float(rating))
-    return highest
+    return highest[0]
 
 def avg_movies(movies, avg):
     higher = []
@@ -34,9 +34,11 @@ def avg_movies(movies, avg):
     for title, rating in movies:
         rating = float(rating)
         if rating > avg:
-            higher.append((title, rating))
+            # higher.append((title, rating))
+            higher.append(title)
         if rating < avg:
-            lower.append((title, rating))
+            # lower.append((title, rating))
+            lower.append(title)
     return (higher, lower)
 
 avg = average(a)
