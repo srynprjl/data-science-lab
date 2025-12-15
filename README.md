@@ -1,4 +1,4 @@
 # Data Science Lab
 
 ## Lab 1
-[Question 1](lab-1/question1.py)
+[Question 1](lab-i/question1.py)
