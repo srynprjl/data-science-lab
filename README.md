@@ -1,4 +1,5 @@
 # Data Science Lab
 
-[Lab 1](lab-i/README.md)
-[Lab 2](lab-ii/README.md)
+[Lab 1](lab-i/README.md) <br />
+[Lab 2](lab-ii/README.md) <br />
+[Lab 3](lab-iii/README.md)

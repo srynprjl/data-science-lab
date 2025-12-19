@@ -1,8 +1,5 @@
 paragraphs = input("Enter a paragraph: ").strip().split(" ")
 
-def sort(list):
-    
-
 word_freq = {}
 for i in paragraphs:
     word_freq[i] = word_freq.get(i, 0) + 1

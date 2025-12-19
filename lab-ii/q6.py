@@ -3,6 +3,7 @@ Represent a small map as a dictionary like {"A": {"B", "C"}, "B": {"A", "D"}, "C
 '''
 
 def validate_path(inp: list, map: dict):
+    path = "Invalid path"
     if(not inp):
         return "Valid path"
 

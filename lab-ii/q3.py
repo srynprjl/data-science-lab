@@ -4,13 +4,12 @@ each student’s average and grade (A/B/C/D). Print the top 2 students based on 
 '''
 
 students = {
-    "Shreyan": [90,90,90,90,90],
-    "Yash": [79,65,94,87,67],
-    "Sandeep": [1, 2, 11, 0, 3]
+    "Shreyan": [90,80,70,60,50],
+    "Ishan": [74,79,97,92,80],
+    "Pranjal": [70,50,60,70,40]
 }
 
 def take_user_input():
-    # a-[1,2,3,4,5,6,7,8,9],
     std = {}
     a = input("Enter student name and marks: ").split(" ")
     for items in a:
@@ -20,7 +19,6 @@ def take_user_input():
         marks = word[1].removeprefix("[").removesuffix("]").split(",")
         marks = [int(items) for items in marks]
         std[name] = marks
-
     return std
 
 
@@ -59,7 +57,7 @@ def top_two_students(std: dict):
     results = sorted(std.items(), key=sort, reverse=True)
     return results[:2]
 
-students = take_user_input()
+# students = take_user_input()
 
 std = calculate_average(students)
-print(top_two_students(std))
+print(dict(top_two_students(std)))

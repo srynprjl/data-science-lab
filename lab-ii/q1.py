@@ -5,8 +5,7 @@ average
 '''
 
 
-a = input("Enter the movies seperated by commas: ").strip("")
-print(a)
+a = input("Enter the movies seperated by commas: ").strip()
 a = a.split(",")
 
 a = [item for item in a if "-" in item ]
@@ -18,7 +17,7 @@ def average(movies: list):
     length = len(movies)
     if(length < 1):
         return 0
-    for name, rating in movies:
+    for _, rating in movies:
         ratings += float(rating)
     return ratings/len(movies)
 
@@ -40,7 +39,7 @@ def avg_movies(movies, avg):
             higher.append(title)
         if rating < avg:
             lower.append(title)
-    return (higher, lower)
+    return higher, lower
 
 avg = average(a)
 highest = highest_rated(a)

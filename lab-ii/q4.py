@@ -9,13 +9,13 @@ store = {
     "milk": 2
 }
 
-
 def add_items(item, quantity):
     item = item.lower()
     if(quantity>0):
         store[item] = store.get(item, 0) + quantity
     else:
         print("Please insert a positive integer")
+
 
 def sell_items(item, quantity=1):
     items = item.lower()
@@ -37,6 +37,13 @@ def low_stock():
         if(quantity < 3):
             print(f"{name.capitalize()} is low on stocks. Quantity: {quantity}")
 
+def print_store():
+    for name, quantity in store.items():
+        print(f"{name}: {quantity}")
 
 
+add_items("apple",3)
+print_store()
+sell_items("banana")
+print_store()
 low_stock()
