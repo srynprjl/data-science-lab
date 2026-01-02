@@ -14,4 +14,4 @@ while True:
     except:
         print("Invalid Input. Enter number only.")
 
-print(gcd(a, b))
+print(f"GCD: {gcd(a, b)}")

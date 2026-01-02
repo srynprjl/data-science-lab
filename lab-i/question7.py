@@ -11,20 +11,12 @@ def largest(nums: list):
     return largest
 
 list = []
-# flag = False
-while True:
-    try:
-        a = input("Enter a number or leave blank to stop")
-        if not a:
-            break
-        if("." in a):
-            list.append(float(a))
-        else:
-            list.append(int(a))
+try:
+    a = input("Enter a number or leave blank to stop")
+    a = a.split()
+    # print(a)
+    list = [float(i.strip()) if "." in i else int(i.strip()) for i in a]
+except:
+    print("Invalid input. Only input float or list numbers")
 
-    except:
-        print("Invalid input. Only input float or list numbers")
-
-
-
-print(largest(list))
+print(f"Largest Num: ", largest(list))

@@ -1,6 +1,5 @@
 '''
-Store student names as keys and marks (list of integers) as values in a dictionary. Compute
-each student’s average and grade (A/B/C/D). Print the top 2 students based on average marks.
+Store student names as keys and marks (list of integers) as values in a dictionary. Compute each student’s average and grade (A/B/C/D). Print the top 2 students based on average marks.
 '''
 
 students = {

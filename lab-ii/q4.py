@@ -1,6 +1,5 @@
 '''
-Imagine a small store inventory like {"apple": 10, "banana": 5, "milk": 2}. Program should allow
-adding new items, selling items (subtract quantity), and print items that are low in stock (<3).
+Imagine a small store inventory like {"apple": 10, "banana": 5, "milk": 2}. Program should allowadding new items, selling items (subtract quantity), and print items that are low in stock (<3).
 '''
 
 store = {
