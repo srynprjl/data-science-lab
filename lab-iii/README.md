@@ -4,7 +4,7 @@
 Basic File Read & Write
 - Create a text file and write multiple lines into it
 - Read the contents of the file and display them on the screen
-- Handle the case where the file does not exist using try-except
+- Handle the case where the file does not exist using try-except<br />
 **Output:**
 ![alt text](../outputs/lab3-1.png)
 
@@ -12,7 +12,7 @@ Basic File Read & Write
 File Processing with Exception Handling
 - Reads numbers from a text file (one number per line)
 - Ignores invalid entries using exception handling
-- Calculates and displays the sum and average of valid numbers
+- Calculates and displays the sum and average of valid numbers<br />
 **Input**
 ![alt text](../outputs/lab3-2input.png)
 **Output:**
@@ -22,7 +22,7 @@ File Processing with Exception Handling
 1. CSV File Handling
 - Read data from a CSV file containing student records (roll number, name, marks)
 - Display all student records
-- Handle file-related and data conversion errors using try-except
+- Handle file-related and data conversion errors using try-except<br />
 **Input**:
 ![alt text](../outputs/lab3-3input.png)
 **Output:**
@@ -32,7 +32,7 @@ File Processing with Exception Handling
 1. Writing and Reading JSON Data
 - Stores student details (ID, name, and marks) in a JSON file
 - Reads the JSON file and displays the student information
-- Handles exceptions related to file access and JSON decoding
+- Handles exceptions related to file access and JSON decoding<br />
 **Input:**
 ![alt text](../outputs/lab3-4input.png)
 **Output:**
@@ -43,8 +43,7 @@ File Processing with Exception Handling
 - Write data to a file
 - Read data from a file
 - Append data to a file
-- Handle invalid user input and file errors using exception handling
+- Handle invalid user input and file errors using exception handling<br />
 
 **Output:**
 ![alt text](../outputs/lab3-5.png)
-
