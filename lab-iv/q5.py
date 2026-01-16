@@ -2,6 +2,6 @@
 import re
 
 text = input("Enter a text: ")
-variable = re.findall(r'\b[A-Z][a-z]+\b', text)
+variable = re.findall(r'\b[A-Z][a-z]*\b', text)
 print(variable)
 
